@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ProyectoAresInfer
+{
+    public class Colocacion
+    {
+        public int ColocacionId { get; set; }
+        public int OfertaTrabajadorId { get; set; }
+        public int TipoContrato { get; set; }
+
+        public DateTime FechaColocacion { get; set; }
+
+        //Navegacion:
+        public virtual OfertaTrabajador OfertaTrabajador { get; set; }
+    }
+}
