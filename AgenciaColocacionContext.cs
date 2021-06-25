@@ -29,6 +29,7 @@ namespace ProyectoAresInfer
                     .IsRequired()
                     .HasMaxLength(10);
             });
+
             modelBuilder.Entity<Oferta>(entity =>
             {
                 entity.HasKey(o => o.OfertaId);
@@ -42,7 +43,11 @@ namespace ProyectoAresInfer
                     .HasMaxLength(50);
                 entity.Property(o => o.Descripcion)
                     .HasColumnType("varchar");
+                entity.Property(o => o.FechaOferta)
+                    .IsRequired()
+                    .HasColumnType("DATE");
             });
+
             modelBuilder.Entity<OfertaTrabajador>(entity =>
             {
                 entity.HasKey(c => c.OfertaTrabajadorId);
@@ -76,6 +81,9 @@ namespace ProyectoAresInfer
             modelBuilder.Entity<Trabajador>(entity =>
             {
                 entity.HasKey(entity => entity.TrabajadorId);
+                entity.Property(c => c.FechaRegistro)
+                    .IsRequired()
+                    .HasColumnType("DATE");
                 entity.Property(c => c.Dni)
                     .IsRequired()
                     .HasMaxLength(9);

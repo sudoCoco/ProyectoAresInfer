@@ -8,7 +8,7 @@ namespace ProyectoAresInfer
     {
         public int ColocacionId { get; set; }
         public int OfertaTrabajadorId { get; set; }
-        public int TipoContrato { get; set; }
+        public string TipoContrato { get; set; }
 
         public DateTime FechaColocacion { get; set; }
 
