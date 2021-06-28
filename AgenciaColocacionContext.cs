@@ -108,8 +108,6 @@ namespace ProyectoAresInfer
                     .IsRequired();
                 entity.Property(c => c.Inmigrante)
                     .IsRequired();
-                entity.Property(c => c.Colocacion)
-                    .IsRequired();
             });
 
             modelBuilder.Entity<Empresa>(entity =>
