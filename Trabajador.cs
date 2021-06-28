@@ -18,6 +18,7 @@ namespace ProyectoAresInfer
         public string NivelFormativo { get; set; }
         public char Discapacidad { get; set; }
         public char Inmigrante { get; set; }
+        public char Prestacion { get; set; }
 
         //Navegacion
         public virtual ICollection<OfertaTrabajador> OfertaTrabajadores { get; private set; } = new ObservableCollection<OfertaTrabajador>();

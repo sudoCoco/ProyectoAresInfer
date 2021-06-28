@@ -43,6 +43,8 @@ namespace ProyectoAresInfer
                     .HasMaxLength(50);
                 entity.Property(o => o.Descripcion)
                     .HasColumnType("varchar");
+                entity.Property(o => o.Puesto)
+                    .IsRequired();
                 entity.Property(o => o.FechaOferta)
                     .IsRequired()
                     .HasColumnType("DATE");
@@ -107,6 +109,8 @@ namespace ProyectoAresInfer
                 entity.Property(c => c.Discapacidad)
                     .IsRequired();
                 entity.Property(c => c.Inmigrante)
+                    .IsRequired();
+                entity.Property(c => c.Prestacion)
                     .IsRequired();
             });
 

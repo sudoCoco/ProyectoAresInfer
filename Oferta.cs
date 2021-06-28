@@ -11,6 +11,7 @@ namespace ProyectoAresInfer
         public int EmpresaId { get; set; }
         public string Titulo { get; set; }
         public string Descripcion { get; set; }
+        public int Puesto { get; set; }
         public DateTime FechaOferta { get; set; }
 
 

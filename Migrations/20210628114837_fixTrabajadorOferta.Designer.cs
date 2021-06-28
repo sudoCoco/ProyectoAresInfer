@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProyectoAresInfer;
 
 namespace ProyectoAresInfer.Migrations
 {
     [DbContext(typeof(AgenciaColocacionContext))]
-    partial class AgenciaColocacionContextModelSnapshot : ModelSnapshot
+    [Migration("20210628114837_fixTrabajadorOferta")]
+    partial class fixTrabajadorOferta
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
